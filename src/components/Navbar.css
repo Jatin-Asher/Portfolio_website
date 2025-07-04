@@ -16,10 +16,14 @@
     gap: 8px;
   }
   .nav-mob-open {
+    position: absolute;
+    top: 16px;
+    right: 16px;
     width: 36px;
     height: 36px;
-    right: 8px;
-    top: 8px;
+    z-index: 1001;
+    /* Prevent overflow */
+    max-width: 90vw;
   }
   .nav-mob-close {
     width: 36px;

@@ -39,3 +39,7 @@ p, .about-para p, .contact-left p, .footer-top-left p, .hero p {
     font-size: 16px !important;
   }
 }
+
+body {
+  overflow-x: hidden;
+}
