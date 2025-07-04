@@ -1,3 +1,56 @@
+@media (max-width: 768px) {
+  .contact {
+    margin: 30px 10px;
+    gap: 30px;
+  }
+  .contact-title h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+  .contact-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-left h1 {
+    font-size: 32px;
+  }
+  .contact-left p {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+  .contact-details {
+    font-size: 16px;
+    gap: 15px;
+  }
+  .contact-detail {
+    gap: 10px;
+  }
+  .contact-right {
+    gap: 18px;
+    width: 100%;
+  }
+  .contact-right label {
+    font-size: 18px;
+  }
+  .contact-right input {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .contact-right textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+  .contact-submit {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .contact{
     display: flex;
     flex-direction: column;

@@ -1,3 +1,36 @@
+@media (max-width: 768px) {
+  .hero {
+    gap: 18px;
+    padding: 0 8px;
+  }
+  .hero img {
+    margin-top: 40px;
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .hero h1 {
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+  }
+  .hero p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero-action {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero-connect, .hero-resume {
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
 .hero{
     display:flex;
     align-items: center;
