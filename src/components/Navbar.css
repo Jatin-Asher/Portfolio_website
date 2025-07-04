@@ -1,0 +1,115 @@
+.nav-home .nav-underline,
+.nav-about .nav-underline,
+.nav-portfolio .nav-underline,
+.nav-contact .nav-underline {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.nav-home:hover .nav-underline,
+.nav-about:hover .nav-underline,
+.nav-portfolio:hover .nav-underline,
+.nav-contact:hover .nav-underline {
+  opacity: 1;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+.nav-menu{
+    display:flex;
+    align-items:center;
+    list-style: none;
+    gap: 60px;
+    font-size:20px;
+}
+.nav-connect{
+    padding: 2px 40px;
+    border-radius: 50px;
+    background: linear-gradient(150deg,#DA7C25 0.36%,#8923E1);
+    font-size: 22px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(150deg,#DA7C25 0.36%,#8923E1);
+    font-size: 22px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}   
+.nav-menu li img{
+   display: flex;
+   margin: auto;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+/* Hide close button by default, show on mobile menu open */
+.nav-mob-close{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+.nav-mob-open{
+    display: none;
+}
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display:none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        z-index: 20;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width:350px;
+        height: 100%;
+        background-color: #000000d1;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        z-index: 100;
+        transition: right 0.5s;
+    }
+    .nav-menu.open {
+        right: 0 !important;
+    }
+    .nav-mob-close{
+        display: block;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
